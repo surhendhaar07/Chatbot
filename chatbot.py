@@ -1,6 +1,5 @@
 import streamlit as st
 from openai import OpenAI
-API="AQ.Ab8RN6Kvzis-9JYhzBXQb6aZNM4v2IYj5Yt8bwaFbX-1hjeQdg"
 client = OpenAI(
     api_key=st.secrets["API"],  # or your API key string
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
