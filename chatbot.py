@@ -1,4 +1,4 @@
-import streamlit as st
+`import streamlit as st
 from openai import OpenAI
 client = OpenAI(
     api_key=st.secrets["API"],  # or your API key string
@@ -30,7 +30,7 @@ user_prompt = st.chat_input("Type your message...")
 
 if user_prompt:
     response = client.chat.completions.create(
-        model="gemini-2.5-flash",
+        model="gemini-3.6-flash",
         messages=[
             {
                 "role": "system",
